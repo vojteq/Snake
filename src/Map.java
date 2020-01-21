@@ -254,6 +254,7 @@ public class Map {
             Thread.sleep(this.sleep);
         }
         System.out.println("zdobyles " + snake.snakeBodyList.size() + " punktow");
+        System.exit(0);
     }
 
     void initializeBoard(JFrame jFrame, Board board, Graphics graphics) {
