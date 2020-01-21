@@ -11,8 +11,7 @@ public class Position {
         return "(" + this.x + "," + this.y + ")";
     }
 
-    public Position addWithModulo(Position position, int height, int width){
-//        return new Position(Math.abs(this.x + position.x) % width, Math.abs(this.y + position.y) % height);
+    public Position add(Position position){
         return new Position(this.x + position.x,this.y + position.y);
     }
 

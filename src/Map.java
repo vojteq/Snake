@@ -33,9 +33,9 @@ public class Map {
     Object objectAt(Position position) {
         if (position.equals(fruit.position))
             return fruit;
-        if (obstacleHashMap.get(position) instanceof Obstacle)
+        if (obstacleHashMap.get(position) != null)
             return obstacleHashMap.get(position);
-        if (snake.snakeBodyHashmap.get(position) instanceof SnakeBodyElem)
+        if (snake.snakeBodyHashmap.get(position) != null)
             return snake.snakeBodyHashmap.get(position);
         return null;
     }

@@ -1,7 +1,6 @@
 public enum Direction {
     UP, RIGHT, DOWN, LEFT;
 
-
     public Position toPosition() {
         switch (this) {
             case DOWN:

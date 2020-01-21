@@ -36,7 +36,4 @@ public class Board extends JPanel {
         for(SnakeBodyElem snakeBodyElem : map.snake.snakeBodyList)
             g.fillRect(snakeBodyElem.position.x * step, snakeBodyElem.position.y * step, step, step);
     }
-
-
-
 }

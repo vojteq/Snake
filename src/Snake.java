@@ -27,7 +27,7 @@ public class Snake {
     }
 
     private Position nextHeadPosition(){
-        return snakeBodyList.get(0).position.addWithModulo(this.direction.toPosition(), map.size, map.size);
+        return snakeBodyList.get(0).position.add(this.direction.toPosition());
     }
 
     protected boolean move() {          //false oznacza smierc
