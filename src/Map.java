@@ -40,14 +40,14 @@ public class Map {
         return null;
     }
 
-//    private void putObstacles(int amount) {
-//        Position position;
-//        do {
-//            position = getRandomPosition();
-//            obstacleHashMap.put(position, new Obstacle(position));
-//            amount--;
-//        } while(amount > 0);
-//    }
+    private void putObstacles(int amount) {
+        Position position;
+        do {
+            position = getRandomPosition();
+            obstacleHashMap.put(position, new Obstacle(position));
+            amount--;
+        } while(amount > 0);
+    }
     protected boolean onMap(Position position) {
         if (position.x < 0 || position.y < 0 || position.x >= size || position.y >= size)
             return false;
@@ -244,7 +244,7 @@ public class Map {
             }
         };
         boolean alive = true;
-//        putObstacles(amountOfObstacles);
+        putObstacles(amountOfObstacles);
         JFrame jFrame = new JFrame("SNAKE");
         initializeBoard(jFrame, board, graphics);
 
