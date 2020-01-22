@@ -31,7 +31,7 @@ public class Board extends JPanel {
         g.fillRoundRect(map.fruit.position.x * step, map.fruit.position.y * step, step, step, 20, 20);
         g.setColor(Color.GRAY);
         for(Obstacle obstacle : map.obstacleHashMap.values())
-            g.fillOval(obstacle.position.x * step, obstacle.position.y * step, step, step);
+            g.fillRect(obstacle.position.x * step, obstacle.position.y * step, step, step);
         g.setColor(Color.BLUE);
         for(SnakeBodyElem snakeBodyElem : map.snake.snakeBodyList)
             g.fillOval(snakeBodyElem.position.x * step, snakeBodyElem.position.y * step, step, step);
