@@ -25,15 +25,17 @@ public class Board extends JPanel {
             super.paintComponent(g);
         } catch (NullPointerException e) {}
         this.setSize(size,size);
-        this.setBackground(Color.ORANGE);
+        this.setBackground(Color.BLACK);
 
         g.setColor(Color.RED);
-        g.fillRect(map.fruit.position.x * step, map.fruit.position.y * step, step, step);
-        g.setColor(Color.BLACK);
+        g.fillRoundRect(map.fruit.position.x * step, map.fruit.position.y * step, step, step, 20, 20);
+        g.setColor(Color.GRAY);
         for(Obstacle obstacle : map.obstacleHashMap.values())
-            g.fillRect(obstacle.position.x * step, obstacle.position.y * step, step, step);
+            g.fillOval(obstacle.position.x * step, obstacle.position.y * step, step, step);
         g.setColor(Color.BLUE);
         for(SnakeBodyElem snakeBodyElem : map.snake.snakeBodyList)
-            g.fillRect(snakeBodyElem.position.x * step, snakeBodyElem.position.y * step, step, step);
+            g.fillOval(snakeBodyElem.position.x * step, snakeBodyElem.position.y * step, step, step);
+        g.setColor(Color.GREEN);
+        g.fillOval(map.snake.snakeBodyList.get(0).position.x * step, map.snake.snakeBodyList.get(0).position.y * step, step, step);
     }
 }

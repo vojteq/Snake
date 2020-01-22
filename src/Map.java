@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Random;
 
 public class Map {
-    protected final int size = 50;
+    protected final int size = 20;
     protected Fruit fruit;
     HashMap<Position, Obstacle> obstacleHashMap;
     Random random = new Random();
@@ -42,11 +42,11 @@ public class Map {
 
     private void putObstacles(int amount) {
         Position position;
-        do {
+        while (amount > 0) {
             position = getRandomPosition();
             obstacleHashMap.put(position, new Obstacle(position));
             amount--;
-        } while(amount > 0);
+        }
     }
     protected boolean onMap(Position position) {
         if (position.x < 0 || position.y < 0 || position.x >= size || position.y >= size)
@@ -247,7 +247,7 @@ public class Map {
         putObstacles(amountOfObstacles);
         JFrame jFrame = new JFrame("SNAKE");
         initializeBoard(jFrame, board, graphics);
-
+        Thread.sleep(1500);
         while (alive) {
             alive = snake.move();
             board.repaint();
@@ -258,7 +258,7 @@ public class Map {
     }
 
     void initializeBoard(JFrame jFrame, Board board, Graphics graphics) {
-        jFrame.setSize(board.size+15, board.size+40);
+        jFrame.setSize(board.size+14, board.size+37);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.setVisible(true);
         jFrame.setLocationRelativeTo(null);
