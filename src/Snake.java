@@ -13,7 +13,7 @@ public class Snake {
         SnakeBodyElem snakeBodyElem = new SnakeBodyElem(position);
         snakeBodyList.add(snakeBodyElem);
         snakeBodyHashmap.put(position, snakeBodyElem);
-        direction = Direction.LEFT;
+        direction = Direction.UP;
         this.map = map;
     }
 

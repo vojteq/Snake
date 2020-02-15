@@ -60,7 +60,7 @@ public class Map {
 
     void start() throws InterruptedException {
         Board board = new Board(this);
-
+        int fruitSpawn = 0;
         board.addKeyListener(new MyKeyListener(this));
         Graphics graphics = new Graphics() {
             @Override
@@ -252,6 +252,9 @@ public class Map {
             alive = snake.move();
             board.repaint();
             Thread.sleep(this.sleep);
+            fruitSpawn++;
+            if (fruitSpawn % 50  == 0)
+                putFruit();
         }
         System.out.println("zdobyles " + snake.snakeBodyList.size() + " punktow");
         System.exit(0);
