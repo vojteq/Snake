@@ -4,11 +4,18 @@
     <list default="true" id="1c8a7893-e7d5-432e-8874-9edbc4650150" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/StartingMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/out/production/snake/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/snake/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/Map.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/snake/Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/Snake.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Map.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/out/production/snake/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+>>>>>>> origin/master
       <change beforePath="$PROJECT_DIR$/src/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Snake.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
